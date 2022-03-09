@@ -1,0 +1,3 @@
+# run the build command on the dockerfile
+app="dev_blog"
+docker build -t ${app} .

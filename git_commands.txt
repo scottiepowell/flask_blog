@@ -1,0 +1,10 @@
+#git add command adds all files in directory
+git add . --no-all 
+#git branch commands
+ git checkout -b <my branch name>
+#command pushes from local git repo to github repo
+ git push -u origin <branch name>
+#commits code to local repo
+git commit -m "message about commit"
+
+ 

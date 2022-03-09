@@ -1,0 +1,16 @@
+#flask setup - venv is the command, second venv in the dir with virtual environment
+python3 -m venv venv
+#flask activate environment
+source venv/bin/activate
+#set the environment variable for the flask_app in order to use command 'flask run'
+export flask_app=<app name>
+#allows for the setting of enviromental variables in flask across termial sessions in .flaskenv folder
+pip install python-dotenv
+#flask app to configure variables in
+#config.py
+#flask migration setup and commands
+flask db init
+# flask db migrate -m is used to migrate from classes from models.py to the app.db
+flask db migrate -m "<short desciption of migration>"
+#flask command to make changes of the flask migrate command
+flask db upgrade
